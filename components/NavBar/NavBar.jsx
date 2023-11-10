@@ -19,11 +19,11 @@ import images from '../../img';
 
 const NavBar = () => {
   //USESTATE COMPONENTS
-  const [Discover, setDiscover] = useState(false);
-  const [Help, setHelp] = useState(false);
-  const [Notification, setNotification] = useState(false);
-  const [Profile, setProfile] = useState(false);
-  const [OpenSideMenu, setOpenSideMenu] = useState(false);
+  const [discover, setDiscover] = useState(false);
+  const [help, setHelp] = useState(false);
+  const [notification, setNotification] = useState(false);
+  const [profile, setProfile] = useState(false);
+  const [openSideMenu, setOpenSideMenu] = useState(false);
 
   const openMenu = (e) => {
     const btnText = e.target.innerText;
@@ -46,7 +46,7 @@ const NavBar = () => {
   };
 
   const openNotification = () => {
-    if (!Notification) {
+    if (!notification) {
       setNotification(true);
       setDiscover(false);
       setHelp(false);
@@ -57,7 +57,7 @@ const NavBar = () => {
   };
 
   const openProfile = () => {
-    if (!Profile) {
+    if (!profile) {
       setProfile(true);
       setHelp(false);
       setDiscover(false);
@@ -68,7 +68,7 @@ const NavBar = () => {
   };
 
   const openSidebar = () => {
-    if (!OpenSideMenu) {
+    if (!openSideMenu) {
       setOpenSideMenu(true);
     } else {
       setOpenSideMenu(false);
@@ -99,7 +99,7 @@ const NavBar = () => {
           <div className={Style.NavBar_Container_Right_Discover}>
             {/*DISCOVER MENU*/}
             <p onClick={(e) => openMenu(e)}>Discover</p>
-            {Discover && (<div className={Style.NavBar_Container_Right_Discover_Box}>
+            {discover && (<div className={Style.NavBar_Container_Right_Discover_Box}>
               <Discover />
             </div>)}
           </div>
@@ -107,7 +107,7 @@ const NavBar = () => {
           {/*HELP CENTER MENU*/}
           <div className={Style.NavBar_Container_Right_Help}>
             <p onClick={(e) => openMenu(e)}>Help Center</p>
-            {Help && (
+            {help && (
               <div className={Style.NavBar_Container_Right_Help_Box}>
                 <HelpCenter />
               </div>
@@ -117,7 +117,7 @@ const NavBar = () => {
           {/* NOTIFICATION */}
           <div className={Style.NavBar_Container_Right_Notify}>
             <MdNotifications className={Style.Notify} onClick={() => openNotification()} />
-            {Notification && <Notification />}
+            {notification && <Notification />}
           </div>
 
           {/*CREATE BUTTON SECTION */}
@@ -129,7 +129,7 @@ const NavBar = () => {
           <div className={Style.NavBar_Container_Right_Profile_Box}>
             <div className={Style.NavBar_Container_Right_Profile}>
               <Image src={images.user1} alt='Profile' width={40} height={40} onClick={() => openProfile()} className={Style.NavBar_Container_Right_Profile} />
-              {Profile && <Profile />}
+              {profile && <Profile />}
             </div>
           </div>
 
@@ -143,7 +143,7 @@ const NavBar = () => {
 
       {/*SIDEBAR COMPONENT - Only for mobile device*/}
       {
-        OpenSideMenu && (
+        openSideMenu && (
           <div className={Style.Sidebar}>
             <Sidebar setOpenSideMenu={setOpenSideMenu} />
           </div>
