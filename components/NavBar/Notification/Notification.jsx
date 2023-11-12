@@ -16,12 +16,13 @@ const Notification = () => {
         </div>
         <div className={Style.Notification_Box_Info}>
           <h4>Marko Petrović</h4>
-          <p>Message</p>
+          <p>Message will appear here, and whatever the user sent</p>
           <small>3 minutes ago</small>
         </div>
         <span className={Style.Notification_Box_New}></span>
       </div>
-    </div>
+      </div>
+    
   )
 }
 

@@ -1,0 +1,60 @@
+.Sidebar_Box{
+    padding: 2rem;
+    border-bottom: 1px solid var(--icons-color);
+    background-color: var(--main-bg-color);
+}
+
+.Sidebar_CloseBtn{
+    position: absolute;
+    top:3rem;
+    right: 2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.Sidebar_CloseBtn:hover{
+    transform: rotate(360deg);
+}
+
+.Sidebar_Box p{
+    margin-top: -2rem;
+}
+.Sidebar_Social{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.Sidebar_Social a{
+    padding: .2rem;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+    display: grid;
+}
+.Sidebar_Social a:hover{
+    background-color: var(--items-color);
+    color: var(--shadow-dark-color);
+    box-shadow: 1px solid var(--icons-color);
+}
+.Sidebar_Menu{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 500px;
+    border-bottom: 1px solid var(--icons-color);
+}
+
+.Sidebar_Menu_Box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Sidebar_Discover{
+    padding-inline: 1rem;
+}
+.Sidebar_Button{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

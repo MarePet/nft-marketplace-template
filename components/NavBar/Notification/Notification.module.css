@@ -1,0 +1,77 @@
+.Notification{
+    position: absolute;
+    padding: 2rem 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    right: 30rem;
+    width: 35rem;
+    top:7rem;
+    z-index: 222222222222223;
+    background-color: var(--main-bg-color);
+}
+
+.Notification > p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.Notification_Box{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.3rem;
+    padding: 1rem;
+    transition: all .3s ease-in;
+    font-size: 1.3rem;
+}
+
+.Notification_Box:hover {
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    border-radius: .3rem;
+}
+
+.Notification_Box_Image{
+    border-radius: 5rem;
+}
+
+.Notification_Box_Info{
+    line-height: 0.5;
+}
+
+.Notification_Box_Info h4{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.Notification_Box_Info p{
+    font-size: 15px;
+    position: relative;
+    line-height: 1rem;
+}
+
+.Notification_Box_New{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: aqua;
+    padding: .3rem;
+}
+
+@media screen and (max-width:40rem) {
+    .Notification{
+        width: 30rem;
+        line-height: 0.1rem;
+        left: 5rem;
+    }
+    .Notification_Box{
+        padding: .3rem;
+        
+    }
+    .Notification_Box p{
+        font-size: 12px;
+        line-height: 1rem;
+    }
+}

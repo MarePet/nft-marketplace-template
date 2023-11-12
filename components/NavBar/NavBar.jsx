@@ -122,7 +122,7 @@ const NavBar = () => {
 
           {/*CREATE BUTTON SECTION */}
           <div className={Style.NavBar_Container_Right_Button}>
-            <Button btnText="Create" />
+            <Button btnName="Create" handleClick={()=>{}}/>
           </div>
 
           {/*CREATE USER PROFILE*/}

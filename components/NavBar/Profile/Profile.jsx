@@ -13,7 +13,7 @@ import Images from '../../../img';
 const Profile = () => {
   return (
     <div className={Style.Profile}>
-      <div style={Style.Profile_Account}>
+      <div className={Style.Profile_Account}>
         <Image src={Images.user1} alt='User profile' width={50} height={50} className={Style.Profile_Account_Image} />
         <div className={Style.Profile_Account_Info}>
           <p>Marko Petrović</p>
@@ -45,7 +45,7 @@ const Profile = () => {
         </div>
 
         <div className={Style.Profile_Menu_Two}>
-          <div style={Style.Profile_Menu_One_Item}>
+          <div className={Style.Profile_Menu_One_Item}>
             <MdHelpCenter />
             <p>
               <Link href={{ pathname: '/help' }}>
@@ -53,7 +53,7 @@ const Profile = () => {
               </Link>
             </p>
           </div>
-          <div style={Style.Profile_Menu_One_Item}>
+          <div className={Style.Profile_Menu_One_Item}>
             <TbDownload />
             <p>
               <Link href={{ pathname: '/disconnect' }}>

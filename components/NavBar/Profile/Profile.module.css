@@ -1,0 +1,41 @@
+.Profile{
+    position: absolute;
+    padding: 2rem .5rem;
+    box-shadow: var(--box-shadow);
+    font-size: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    left: -17rem;
+    top: 4.5rem;
+    z-index: 22222222222;
+    background-color: var(--main-bg-color);
+}
+.Profile_Account{
+    display: flex;
+    align-items: flex-start;
+    gap:2rem;
+    padding: 1.5rem;
+}
+.Profile_Account_Image{
+    border-radius: 50%;
+}
+.Profile_Account_Info{
+    line-height: 0.3rem;
+}
+.Profile_Account_Info p{
+    font-weight: 600;
+}
+
+.Profile_Menu_One_Item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0rem 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.Profile_Menu_One_Item:hover{
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    border-radius: .3rem;
+}

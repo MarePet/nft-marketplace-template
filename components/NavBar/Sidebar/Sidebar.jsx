@@ -90,7 +90,7 @@ const Sidebar = ({ setOpenSideMenu }) => {
 
   return (
     <div className={Style.Sidebar}>
-      <div className={Style.Sidebar_CloseBtn} onClick={() => closeSidebar()}></div>
+      <GrClose className={Style.Sidebar_CloseBtn} onClick={() => closeSidebar()}/>
       <div className={Style.Sidebar_Box}>
         <Image src={Images.logo} alt='logo' width={150} height={150} />
         <p>Discover articles about all the latest topics and news regarding NFT collections and share them</p>
@@ -154,8 +154,8 @@ const Sidebar = ({ setOpenSideMenu }) => {
         </div>
       </div>
       <div className={Style.Sidebar_Button}>
-        <Button btnName="Create" />
-        <Button btnName="Connect Wallet" />
+        <Button btnName="Create" handleClick={()=>{}} />
+        <Button btnName="Connect Wallet" handleClick={()=>{}}/>
       </div>
     </div>
   )
