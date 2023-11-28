@@ -1,0 +1,82 @@
+.Footer{
+    width: 100%;
+    padding-block: 1.5rem;
+    position: relative;
+}
+.Footer_Box{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr repeat(2,1fr) 2fr;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+/* SOCIAL */ 
+
+.Footer_Social{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.Footer_Social a{
+    padding: .5rem;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+    display: grid;
+}
+.Footer_Social a:hover{
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    box-shadow: var(--box-shadow);
+}
+
+.Subscribe_Box{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 1.5rem 2rem;
+background-color: var(--icons-color);
+color: var(--shadow-dark-color);
+border-radius: 5rem;
+margin-top: 3rem;
+}
+
+.Subscribe_Box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    color: var(--shadow-dark-color);
+}
+
+.Subscribe_Box input::placeholder{
+    color: var(--shadow-dark-color);
+}
+
+.Subscribe_Box_Send{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.Subscribe_Box_Info{
+    padding: 1rem 2rem;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 45em) {
+    .Footer_Box{
+        width: 90%;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media screen and (max-width: 35em) {
+    .Footer_Box{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

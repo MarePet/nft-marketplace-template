@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import { Helmet } from "react-helmet";
 
 //INTERNAL IMPORT
-import { NavBar } from '@/components/component';
+import { NavBar, Footer } from '@/components/component';
 
 
 const MyApp = ({ Component, pageProps }) => (
@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }) => (
         </Helmet>
         <NavBar />
         <Component {...pageProps} />
+        <Footer/>
     </div>
 )
 
