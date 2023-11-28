@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+//INTERNAL IMPORT
+import Style from '../styles/index.module.css';
+import { Hero } from '@/components/component';
 
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className={Style.HomePage}>
+      <Hero/>
     </div>
   )
 }
