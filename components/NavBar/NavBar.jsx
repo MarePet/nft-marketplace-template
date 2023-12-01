@@ -122,7 +122,7 @@ const NavBar = () => {
 
           {/*CREATE BUTTON SECTION */}
           <div className={Style.NavBar_Container_Right_Button}>
-            <Button btnName="Create" handleClick={()=>{}}/>
+            <Button btnName="Create" handleClick={() => { }} />
           </div>
 
           {/*CREATE USER PROFILE*/}
@@ -138,17 +138,19 @@ const NavBar = () => {
             <CgMenuRight className={Style.MenuIcon} onClick={() => openSidebar()} />
           </div>
 
+          {/*SIDEBAR COMPONENT - Only for mobile device*/}
+          {
+            openSideMenu && (
+              <div className={Style.Sidebar}>
+                <Sidebar setOpenSideMenu={setOpenSideMenu} />
+              </div>
+            )
+          }
+
         </div>
       </div>
 
-      {/*SIDEBAR COMPONENT - Only for mobile device*/}
-      {
-        openSideMenu && (
-          <div className={Style.Sidebar}>
-            <Sidebar setOpenSideMenu={setOpenSideMenu} />
-          </div>
-        )
-      }
+
     </div>
   );
 };
