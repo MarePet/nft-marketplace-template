@@ -115,14 +115,20 @@
     .NavBar_Container{
         grid-template-columns: 1fr 1fr;
     }
+    .NavBar{
+        width: 80%;
+    }
     .NavBar_Container_Left{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;;
     }
     .NavBar_Container_Right{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,5fr);
+        width: 250%;
+        
     }
     .NavBar_Container_Right_MenuBtn{
         display: block;
+        padding-left: 9rem;
     }
     .NavBar_Container_Left_Box_Input_Box{
         display: none;

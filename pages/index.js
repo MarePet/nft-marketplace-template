@@ -2,7 +2,7 @@ import React from 'react';
 
 //INTERNAL IMPORT
 import Style from '../styles/index.module.css';
-import { Hero , Service} from '@/components/component';
+import { Hero , Service, BigNFTSlider} from '@/components/component';
 
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
     <div className={Style.HomePage}>
       <Hero/>
       <Service/>
+      <BigNFTSlider/>
     </div>
   )
 }

@@ -33,11 +33,14 @@
         font-size: 2rem;
         line-height: 1;
     }
+    .Hero_Box_Right{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width : 55em) {
     .Hero_Box{
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 1rem;
     }
 }

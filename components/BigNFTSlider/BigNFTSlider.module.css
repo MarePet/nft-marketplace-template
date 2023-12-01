@@ -1,0 +1,204 @@
+.BigNFTSlider_Box{
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    align-items: center;
+}
+
+.BigNFTSlider_Box_Left{
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    background-color: var(--box-shadow-color);
+    box-shadow: var(--shadow-dark-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    z-index: 111111111111111111111;
+    height: 110vh;
+   
+}
+
+.BigNFTSlider_Box_Left h2{
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.BigNFTSlider_Box_Right{
+    grid-column: 5/-1;
+    grid-row: -2/1;
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+    border-radius: 10rem;
+    box-shadow: var(--box-shadow-color);
+    z-index: 10;
+}
+
+.BigNFTSlider_Box_Left_Creator{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.BigNFTSlider_Box_Left_Creator_Profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.BigNFTSlider_Box_Left_Creator_Profile_Img{
+    border-radius: 50%;
+}
+
+.BigNFTSlider_Box_Left_Creator_Profile_Info{
+    line-height: 0;
+}
+
+.BigNFTSlider_Box_Left_Creator_Profile_Info p{
+    margin-bottom: -.7rem;
+    margin-top: 1rem;
+}
+
+.BigNFTSlider_Box_Left_Creator_Collection{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.BigNFTSlider_Box_Left_Creator_Collection_Icon{
+    font-size: 4rem;
+}
+
+.BigNFTSlider_Box_Left_Creator_Collection_Info{
+    line-height: 0;
+}
+
+.BigNFTSlider_Box_Left_Bidding_Box{
+    border: 3px solid var(--shadow-dark-color);
+    margin-block: 2rem;
+    padding: 0 4rem;
+    border-radius: .5rem;
+}
+
+.BigNFTSlider_Box_Left_Bidding_Box_Auction{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.BigNFTSlider_Box_Left_Bidding_Box small{
+    background-color: var(--shadow-dark-color);
+    padding: 1rem 2 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+.BigNFTSlider_Box_Left_Bidding_Box_Icon{
+    font-size: 2rem;
+}
+
+.BigNFTSlider_Box_Left_Bidding_Box_Timer{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem 0rem 3rem 0rem;
+    border-bottom: 1px solid var(--shadow-dark-color);
+}
+
+.BigNFTSlider_Box_Left_Bidding_Box_Timer_Item p {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.BigNFTSlider_Box_Left_Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 2rem 0rem;
+    font-size: 4rem;
+}
+
+.BigNFTSlider_Box_Left_SliderBtn{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.BigNFTSlider_Box_Left_SliderBtn_Icon{
+    cursor: pointer;
+    transition:  all .3s ease-in;
+}
+
+.BigNFTSlider_Box_Left_SliderBtn_Icon:hover{
+    background-color: var(--shadow-dark-color);
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+/*----------RIGHT SECTION----------------*/
+
+.BigNFTSlider_Box_Right_Box{
+    position: relative;
+}
+
+.BigNFTSlider_Box_Right_Box_Img{
+    background-color: var(--shadow-dark-color);
+    border-radius: 10rem;
+    box-shadow: var(--box-shadow-color);
+}
+
+.BigNFTSlider_Box_Right_Box_Like{
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    background-color: var(--icons-color);
+    color:var(--shadow-dark-color);
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+}
+
+
+
+@media screen and (max-width: 65em) {
+    .BigNFTSlider_Box{
+        width: 90%;
+        padding-top: 28rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .BigNFTSlider_Box_Left{
+        height: 83vh;
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+   .BigNFTSlider_Box_Right{
+        width: 90%;
+    }
+    .BigNFTSlider_Box_Left_Creator{
+        gap:1rem;
+        grid-template-columns: 1.3fr 1fr;
+    }
+
+    .BigNFTSlider_Box_Left_Creator_Profile_Info{
+        font-size: .8rem;
+    }
+    .BigNFTSlider_Box_Left_Creator_Collection_Icon{
+        font-size: 1.5rem;
+    }
+    .BigNFTSlider_Box_Left_Creator_Collection_Info{
+        font-size: .8rem;
+    }
+    .BigNFTSlider_Box_Left_Bidding_Box_Timer{
+        gap:2rem;
+    }
+    .BigNFTSlider_Box_Left_Bidding_Box_Timer_Item{
+        font-size: 1rem;
+    }
+}
+
