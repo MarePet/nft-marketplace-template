@@ -97,6 +97,7 @@
 .Sidebar{
     position: fixed;
     top: 0;
+    right: 0rem;
     width: 30rem;
     background-color: var(--main-bg-color);
     box-shadow: var(--box-shadow);
