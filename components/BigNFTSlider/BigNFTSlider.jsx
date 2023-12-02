@@ -70,7 +70,7 @@ const BigNFTSlider = () => {
             price: "000000646 ETH",
             like: 243,
             userImage: images.user4,
-            nftImage: images.nft_image_4,
+            nftImage: images.nft_1,
             time: {
                 days: 27,
                 hours: 10,
@@ -159,7 +159,7 @@ const BigNFTSlider = () => {
 
                 <div className={Style.BigNFTSlider_Box_Right}>
                     <div className={Style.BigNFTSlider_Box_Right_Box}>
-                        <Image className={Style.BigNFTSlider_Box_Right_Box_Img} src = {sliderData[idNumber].nftImage} width={700} height={700} alt='NFT Image'/>
+                        <Image className={Style.BigNFTSlider_Box_Right_Box_Img} src = {sliderData[idNumber].nftImage} alt='NFT Image'/>
                         <div className={Style.BigNFTSlider_Box_Right_Box_Like}>
                             <AiFillHeart/>
                             <span>{sliderData[idNumber].like}</span>
