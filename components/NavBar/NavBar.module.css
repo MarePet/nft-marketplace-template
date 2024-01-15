@@ -117,7 +117,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .NavBar{
-        width: 80%;
+        width: 50%;
     }
     .NavBar_Container_Left{
         grid-template-columns: 1fr;;

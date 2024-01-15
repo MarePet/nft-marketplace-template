@@ -3,9 +3,9 @@
     padding: 2rem 1rem;
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
-    right: 30rem;
+    right: 20rem;
     width: 35rem;
-    top:7rem;
+    top:8rem;
     z-index: 222222222222223;
     background-color: var(--main-bg-color);
 }
@@ -60,11 +60,11 @@
     padding: .3rem;
 }
 
-@media screen and (max-width:40rem) {
+@media screen and (max-width:800px) {
     .Notification{
-        width: 30rem;
+        width: 27rem;
         line-height: 0.1rem;
-        left: 5rem;
+        left: 1rem;
     }
     .Notification_Box{
         padding: .3rem;

@@ -1,6 +1,6 @@
 .BigNFTSlider_Box{
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     padding-block: 5rem;
     display: grid;
     grid-template-columns: repeat(15,1fr);
@@ -15,7 +15,7 @@
     border-radius: 1rem;
     padding: 2rem;
     z-index: 1111111111111111111;
-    height: 100vh;
+    height: 90vh;
    
 }
 
@@ -51,7 +51,8 @@
 }
 
 .BigNFTSlider_Box_Left_Creator_Profile_Info{
-    line-height: 0;
+    line-height: 1;
+    font-size: 0.9rem;
 }
 
 .BigNFTSlider_Box_Left_Creator_Profile_Info p{
@@ -113,17 +114,16 @@
 
 .BigNFTSlider_Box_Left_Button{
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 4rem;
-    padding-block: 2rem 0rem;
     font-size: 4rem;
 }
 
 .BigNFTSlider_Box_Left_SliderBtn{
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:3rem;
+    margin-top: 1rem;
     font-size: 3rem;
 }
 .BigNFTSlider_Box_Left_SliderBtn_Icon{
@@ -141,6 +141,7 @@
 
 .BigNFTSlider_Box_Right_Box{
     position: relative;
+    
 }
 
 .BigNFTSlider_Box_Right_Box_Img{
@@ -149,6 +150,7 @@
     background-color: var(--shadow-dark-color);
     border-radius: 5rem;
     box-shadow: var(--box-shadow-color);
+    
 }
 
 .BigNFTSlider_Box_Right_Box_Like{
@@ -157,35 +159,40 @@
     right: 3rem;
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     background-color: var(--icons-color);
     color: var(--shadow-dark-color);
     padding: .5rem 1rem;
     border-radius: 5rem;
 }
 
-
-
-@media screen and (max-width: 65em) {
+@media screen and (max-width: 1024px) {
     .BigNFTSlider_Box{
-        display: grid;
-        width: 90%;
-        padding-top: 5rem;
+        grid-template-columns: repeat(12,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BigNFTSlider_Box{
+        width: 80%;
+        padding-top: 30rem;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 6rem;
     }
     .BigNFTSlider_Box_Left{
         height: 90vh;
-        width: 90%;
-        padding: 1.5rem;
+        padding: 4rem;
     }
-
+    
    .BigNFTSlider_Box_Right{
-        
-    }
+        margin-top: -65rem;
+    } 
     .BigNFTSlider_Box_Left_Creator{
-        gap: 1rem;
-        grid-template-columns: 1.3fr 1fr;
+        gap: 5rem;
+        grid-template-columns: 1.8fr 1fr;
+    }
+    .BigNFTSlider_Box_Left_SliderBtn{
+        gap: 4rem;
     }
 
     .BigNFTSlider_Box_Left_Creator_Profile_Info{
@@ -204,4 +211,5 @@
         font-size: 1rem;
     }
 }
+
 
