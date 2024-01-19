@@ -1,0 +1,23 @@
+.Title{
+    width: 100%;
+}
+
+.Title_Box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Title_Box h2{
+    font-size: 3rem;
+    line-height: 0;
+}
+
+@media screen and (max-width: 426px) {
+    .Title_Box{
+        width: 90%;
+    }
+    .Title_Box h2{
+        font-size: 1.8rem;
+        line-height: 0;
+    }
+}

@@ -5,5 +5,15 @@ import Hero from "./Hero/Hero";
 import Service from "./Service/Service";
 import BigNFTSlider from "./BigNFTSlider/BigNFTSlider";
 import Subscribe from "./Subscribe/Subscribe";
+import Title from "./Title/Title";
 
-export {Button,Footer,NavBar, Hero, Service, BigNFTSlider,Subscribe}
+export {
+    Button,
+    Footer,
+    NavBar, 
+    Hero, 
+    Service, 
+    BigNFTSlider,
+    Subscribe,
+    Title
+}
