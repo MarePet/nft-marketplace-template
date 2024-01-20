@@ -21,27 +21,39 @@
 }
 
 
-
-@media only screen and (max-width : 426px) {
-    .Hero{
-        width: 80%;
+@media screen and (max-width : 768px) {
+    .Hero_Box{
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
     }
     .Hero_Box_Left{
-        width: 100%;
+        width: 80%;
+    }
+    .Hero_Box_Right img{
+        width: 100vw;
+        height: 100%;
+    }
+}
+
+@media  screen and (max-width : 426px) {
+    .Hero{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .Hero_Box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Hero_Box_Left{
+        width: 100vw;
     }
     .Hero_Box_Left h1{
         font-size: 2rem;
         line-height: 1;
     }
     .Hero_Box_Right img{
-        width: 120%;
+        width: 100vw;
         height: 100%;
     }
 }
 
-@media only screen and (max-width : 55em) {
-    .Hero_Box{
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}

@@ -1,0 +1,67 @@
+.Filter{
+    padding: 4rem 0rem;
+    width: 100%;
+}
+
+.Filter_Box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.Filter_Box_Left{
+    display: flex;
+    gap: 5rem;
+}
+.Filter_Box_Left button{
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--main-bg-color);
+    transition: all .3s ease-in;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.Filter_Box_Right_Box{
+    border: 1px solid var(--icon-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--main-bg-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+
+.Filter_Box_Left button:hover{
+    border: 1px solid var(--icon-color);
+    color: var(--icon-color);
+    box-shadow: var(--box-shadow);
+}
+
+
+@media screen and (min-width: 375px) and (max-width:426px) {
+    .Filter_Box{
+        display: grid;
+        gap: 4rem; 
+    }
+    .Filter_Box_Left{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+    .Filter_Box_Left button{
+        padding: 0.3rem;
+    }
+    .Filter_Box_Right_Box{
+        margin: 0;
+    }
+}

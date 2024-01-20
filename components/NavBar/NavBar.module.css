@@ -117,14 +117,14 @@
         grid-template-columns: 1fr 2fr;
     }
     .NavBar{
-        width: 80%;
+        width: 100%;
     }
     .NavBar_Container_Left{
         grid-template-columns: 1fr;
     }
     .NavBar_Container_Right{
         grid-template-columns: repeat(3,1fr);
-        width: 140%;
+        width: 110%;
     }
     .NavBar_Container_Right_MenuBtn{
         display: block;
