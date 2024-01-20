@@ -22,19 +22,20 @@
 
 
 
-@media only screen and (max-width : 35em) {
+@media only screen and (max-width : 426px) {
     .Hero{
         width: 80%;
     }
     .Hero_Box_Left{
-        padding-right: 1rem;
+        width: 100%;
     }
     .Hero_Box_Left h1{
         font-size: 2rem;
         line-height: 1;
     }
-    .Hero_Box_Right{
-        width: 80%;
+    .Hero_Box_Right img{
+        width: 120%;
+        height: 100%;
     }
 }
 

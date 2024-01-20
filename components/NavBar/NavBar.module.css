@@ -114,22 +114,21 @@
 
 @media only screen and (min-width : 320px ) and (max-width : 768px) {
     .NavBar_Container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
     .NavBar{
-        width: 50%;
+        width: 80%;
     }
     .NavBar_Container_Left{
-        grid-template-columns: 1fr;;
+        grid-template-columns: 1fr;
     }
     .NavBar_Container_Right{
-        grid-template-columns: repeat(3,5fr);
-        width: 250%;
-        
+        grid-template-columns: repeat(3,1fr);
+        width: 140%;
     }
     .NavBar_Container_Right_MenuBtn{
         display: block;
-        padding-left: 9rem;
+        padding-left: 8rem;
     }
     .NavBar_Container_Left_Box_Input_Box{
         display: none;

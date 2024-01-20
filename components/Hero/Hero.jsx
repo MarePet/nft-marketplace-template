@@ -16,7 +16,7 @@ const Hero = () => {
                 <Button btnName='Start your search'/>
             </div>
             <div className={Style.Hero_Box_Right}>
-                <Image src={images.hero} alt = "hero_image" width={600} height={600}/>
+                <Image src={images.hero} alt = "hero_image" />
             </div>
         </div>
     </div>
