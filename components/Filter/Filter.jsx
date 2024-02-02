@@ -83,7 +83,7 @@ const Filter = () => {
                     <div className={Style.Filter_Box_Items}>
                         <div className={Style.Filter_Box_Items_Box}>
                             <div className={Style.Filter_Box_Items_Box_Item}>
-                                <FaWallet /> <span>0.01 ETH - 10 ETH</span>
+                                <FaWallet /> <span>10 ETH</span>
                                 <AiFillCloseCircle />
                             </div>
                         </div>

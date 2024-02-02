@@ -2,20 +2,21 @@
     margin: 0 auto;
     width: 70%;
     padding-block: 5rem;
+    padding-bottom: 10rem;
     display: grid;
     grid-template-columns: repeat(15,1fr);
     align-items: center;
 }
 
 .BigNFTSlider_Box_Left{
-    grid-column: 1/7;
+    grid-column: 1/8;
     grid-row: 1/ -1;
     background-color: var(--main-bg-color);
     box-shadow: var(--box-shadow-2);
     border-radius: 1rem;
     padding: 2rem;
     z-index: 1111111111111111111;
-    height: 90vh;
+    height: 100%;
    
 }
 
@@ -25,15 +26,17 @@
 }
 
 .BigNFTSlider_Box_Right{
-    grid-column: 6/-1;
-    grid-row: 2/-1;
+    grid-column: 5/-1;
+    grid-row: 1/-1;
+    justify-self: center;
     padding: 1rem;
     background-color: var(--main-bg-color);
     border-radius: 5rem;
     box-shadow: var(--box-shadow-2);
-    width: 90%;
+    width: 70%;
     z-index: 1111111111;
 }
+
 
 .BigNFTSlider_Box_Left_Creator{
     display: grid;
@@ -52,7 +55,7 @@
 
 .BigNFTSlider_Box_Left_Creator_Profile_Info{
     line-height: 1;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .BigNFTSlider_Box_Left_Creator_Profile_Info p{
@@ -63,7 +66,8 @@
 .BigNFTSlider_Box_Left_Creator_Collection{
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
+    font-size: 1.2rem;
 }
 
 .BigNFTSlider_Box_Left_Creator_Collection_Icon{
@@ -76,9 +80,11 @@
 
 .BigNFTSlider_Box_Left_Bidding_Box{
     border: 3px solid var(--shadow-dark-color);
-    margin-block: 2rem;
+    margin-block: 2rem auto;
     padding: 0 4rem;
     border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
 .BigNFTSlider_Box_Left_Bidding_Box_Auction{
@@ -104,6 +110,7 @@
     text-align: center;
     padding: 1rem 0rem 3rem 0rem;
     border-bottom: 1px solid var(--shadow-dark-color);
+    font-size: 1.2rem;
 }
 
 .BigNFTSlider_Box_Left_Bidding_Box_Timer_Item p {
@@ -123,8 +130,8 @@
     display: flex;
     align-items: center;
     gap:3rem;
-    margin-top: 1rem;
-    font-size: 3rem;
+    margin-top: 2rem;
+    font-size: 4rem;
 }
 .BigNFTSlider_Box_Left_SliderBtn_Icon{
     cursor: pointer;
@@ -166,28 +173,47 @@
     border-radius: 5rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .BigNFTSlider_Box{
-        grid-template-columns: repeat(12,1fr);
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .BigNFTSlider_Box_Left{
+        width: 80vw;
+        height: 100%; 
+    }
+
+    .BigNFTSlider_Box_Left_Title{
+        overflow-wrap: break-word;
+    }
+
+    .BigNFTSlider_Box_Right{
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 836px) {
+    
     .BigNFTSlider_Box{
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 30rem;
-        grid-template-columns: 1fr;
-        gap: 1rem;
+       display: grid;
+       grid-template-rows: repeat(2,1fr);
+       grid-template-columns: 1fr;
+       justify-items: center;
+       margin-top: 28rem;
+       width: 70%;
+       height: 80%;
     }
     .BigNFTSlider_Box_Left{
-        height: 100%;
+        width: 100%;
         padding: 2rem;
     }
     
    .BigNFTSlider_Box_Right{
-        margin-top: -70rem;
-        width: 100%;
+        margin-top: -105rem;
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+        width: 80%;
     } 
     .BigNFTSlider_Box_Left_Creator{
         gap: 5rem;
@@ -195,6 +221,56 @@
     }
     .BigNFTSlider_Box_Left_SliderBtn{
         gap: 4rem;
+    }
+
+    .BigNFTSlider_Box_Left_Creator_Profile_Info{
+        font-size: .8rem;
+    }
+    .BigNFTSlider_Box_Left_Creator_Collection_Icon{
+        font-size: 1.5rem;
+    }
+    .BigNFTSlider_Box_Left_Creator_Collection_Info{
+        font-size: .8rem;
+    }
+    .BigNFTSlider_Box_Left_Bidding_Box_Timer{
+        gap:2rem;
+    }
+    .BigNFTSlider_Box_Left_Bidding_Box_Timer_Item{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    .BigNFTSlider_Box{
+       display: grid;
+       grid-template-rows: repeat(2,1fr);
+       grid-template-columns: 1fr;
+       justify-items: center;
+       margin-top: 20rem;
+       width: 90%;
+    }
+    .BigNFTSlider_Box_Left{
+        width: 100%;
+        padding: 2rem;
+    }
+    
+   .BigNFTSlider_Box_Right{
+        margin-top: -99rem;
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+        width: 80%;
+    } 
+    .BigNFTSlider_Box_Left_Creator{
+        gap: 5rem;
+        grid-template-columns: 1.8fr 1fr;
+    }
+    .BigNFTSlider_Box_Left_SliderBtn{
+        gap: 4rem;
+    }
+
+    .BigNFTSlider_Box_Left_Title h2{
+        font-size: 2.5rem;
     }
 
     .BigNFTSlider_Box_Left_Creator_Profile_Info{

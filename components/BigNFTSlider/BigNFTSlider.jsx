@@ -97,7 +97,7 @@ const BigNFTSlider = () => {
         <div className={Style.BigNFTSlider}>
             <div className={Style.BigNFTSlider_Box}>
                 <div className={Style.BigNFTSlider_Box_Left}>
-                    <h2>{sliderData[idNumber].title}</h2>
+                    <div className={Style.BigNFTSlider_Box_Left_Title}><h2>{sliderData[idNumber].title}</h2></div>
                     <div className={Style.BigNFTSlider_Box_Left_Creator}>
                         <div className={Style.BigNFTSlider_Box_Left_Creator_Profile}>
                             <Image className={Style.BigNFTSlider_Box_Left_Creator_Profile_Img}
