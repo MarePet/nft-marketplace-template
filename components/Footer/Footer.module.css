@@ -68,20 +68,20 @@ margin-top: 3rem;
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 55em) {
+@media screen and (max-width: 768px) {
     .Footer{
         width:100%;
     }
     .Footer_Box{
         
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 1fr;
     }
 }
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 426px) {
     .Footer{
         width: 100%;
     }
     .Footer_Box{
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
     }
 }

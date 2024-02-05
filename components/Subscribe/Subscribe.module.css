@@ -1,37 +1,36 @@
-.Subscribe{
+.Subscribe {
     width: 100%;
 }
 
-.Subscribe_Box{
-    width: 80%; 
-    margin: auto;
+.Subscribe_Box {
     padding: 5rem 0;
     display: grid;
-    grid-template-columns: 2.5fr 2fr;
-    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
 }
 
-.Subscribe_Box_Left h2{
+.Subscribe_Box_Left h2 {
     font-size: 3rem;
     line-height: 1;
 }
-.Subscribe_Box p{
-    font-size: 1.1rem;
+
+.Subscribe_Box p {
+    font-size: 1.3rem;
 }
 
-.Subscribe_Box_Left_Box{
+.Subscribe_Box_Left_Box {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
 }
 
-.Subscribe_Box_Left_Box small{
+.Subscribe_Box_Left_Box small {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.Subscribe_Box_Left_Box span{
+.Subscribe_Box_Left_Box span {
     background-color: var(--icons-color);
     color: var(--main-bg-color);
     padding: .5rem 1rem;
@@ -40,7 +39,7 @@
     text-align: center;
 }
 
-.Subscribe_Box_Left_Input{
+.Subscribe_Box_Left_Input {
     margin-top: 3rem;
     padding: 2rem;
     width: 80%;
@@ -51,40 +50,64 @@
     align-items: center;
 }
 
-.Subscribe_Box_Left_Input input{
+.Subscribe_Box_Left_Input input {
     background-color: transparent;
     border: 0;
     outline: none;
     width: 90%;
 }
 
-.Subscribe_Box_Left_Input input::placeholder{
+.Subscribe_Box_Left_Input input::placeholder {
     color: var(--main-bg-color);
     font-size: 1.2rem;
 }
 
-.Subscribe_Box_Left_Input_Icon{
+.Subscribe_Box_Left_Input_Icon {
     font-size: 2rem;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
-   
-    .Subscribe_Box{
-    width: 90%;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-   }
-   .Subscribe_Box_Left_Input{
-    width: 90%;
-    padding: 1rem;
-   }
+.Subscribe_Box_Right_Img{
+    width: 600px;
+    height: 500px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .Subscribe_Box {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    .Subscribe_Box_Left{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .Subscribe_Box_Left h2{
+        font-size: 2rem;
+    }
+
+    .Subscribe_Box_Left p{
+        font-size: 1.2rem;
+    }
+    .Subscribe_Box_Left_Input {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .Subscribe_Box_Right_Img{
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    .Subscribe_Box{
-     width:90%;
-     grid-template-columns: repeat(1,1fr);
-     gap: 4rem;
-    } 
- }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Subscribe_Box {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+}
