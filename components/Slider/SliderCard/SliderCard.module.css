@@ -1,0 +1,93 @@
+.SliderCard {
+    padding: .1rem;
+}
+
+.SliderCard_Box {
+    transition: all .3s ease-in;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+}
+
+.SliderCard_Box:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.SliderCard_Box_Img_Img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.SliderCard_Box_Title{
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.SliderCard_Box_Title p{
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.SliderCard_Box_Title_Like{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.SliderCard_Box_Price{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    line-height: 0;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+.SliderCard_Box_Price_Box{
+    border: 1px solid var(--icons-color);
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+}
+
+.SliderCard_Box_Price_Box small{
+    background-color: var(--icons-color);
+    padding: .2rem 1rem;
+    border-radius: .2rem;
+    color: var(--main-bg-color);
+}
+
+.SliderCard_Box_Price_Box p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 0;
+}
+
+.SliderCard_Box_Price_Time{
+    align-items: flex-end;
+    display: grid;
+}
+
+.SliderCard_Box_Price_Time p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 375px) {
+    .SliderCard{
+        padding: .5rem;
+    }
+    .SliderCard_Box_Title p{
+        font-size: 1rem;
+    }
+    .SliderCard_Box_Price_Box{
+        padding: .2rem;
+    }
+    .SliderCard_Box_Price_Time p{
+        font-size: 1rem;
+    }
+}

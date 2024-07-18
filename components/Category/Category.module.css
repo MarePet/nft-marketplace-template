@@ -49,14 +49,14 @@
 
 }
 
-@media screen and (min-width: 427px) and (max-width: 770px) {
+@media screen and (min-device-width: 427px) and (max-device-width: 770px) {
     .Category{
         grid-template-columns: repeat(2,1fr);
     }
     
 }
 
-@media screen and (min-width: 772px) and (max-width: 1025px) {
+@media screen and (min-device-width: 772px) and (max-device-width: 1025px) {
     .Category{
         grid-template-columns: repeat(3,1fr);
     }

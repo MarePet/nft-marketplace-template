@@ -1,0 +1,116 @@
+.DaysComponent{
+    width: 100%;
+    border-radius: 1rem;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.DaysComponent:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.DaysComponent_Box_Img_Img{
+    border-radius: 1rem;
+}
+
+.DaysComponent_Box_Profile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .5rem;
+}
+
+.DaysComponent_Box_Img_1{
+    border-bottom-left-radius: 1rem;
+}
+.DaysComponent_Box_Img_3{
+    border-bottom-right-radius: 1rem;
+}
+
+.DaysComponent_Box_Title{
+    padding: 1rem 2rem;
+    line-height: 0;
+}
+
+.DaysComponent_Box_Title_Info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DaysComponent_Box_Title_Info_Profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.DaysComponent_Box_Title_Info_Profile_Img{
+    border-radius: 50%;
+}
+
+.DaysComponent_Box_Title_Info_Profile span{
+    font-weight: 600;
+    padding-inline: .5rem;
+}
+
+.DaysComponent_Box_Title_Info_Price{
+    font-weight: 600;
+    border: 3px solid var(--icons-color);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+
+.DaysComponent_Box_Img_Img{
+    width: 100%;
+}
+
+.DaysComponent_Box_Img_1{
+    width: 100%;
+}
+.DaysComponent_Box_Img_2{
+    width: 100%;
+}
+
+.DaysComponent_Box_Img_3{
+    width: 100%;
+}
+
+.DaysComponent_Box_Title{
+    padding: 1rem;
+}
+
+@media screen and (max-device-width: 425px) {
+    .DaysComponent_Box_Profile{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-device-width: 425px) and (max-device-width: 930px){
+    .DaysComponent_Box_Profile{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .DaysComponent_Box_Title_Info{
+        flex-direction: column ;
+        gap: 2rem;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .DaysComponent_Box_Title_Info_Profile{
+        font-size: 0.8rem;
+    }
+    .DaysComponent_Box_Title{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-device-width: 931px) and (max-device-width: 1200px){
+    .DaysComponent_Box_Profile{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .DaysComponent_Box_Title_Info_Profile{
+        font-size: 0.6rem;
+    }
+    .DaysComponent_Box_Title{
+        font-size: 0.8rem;
+    }
+}

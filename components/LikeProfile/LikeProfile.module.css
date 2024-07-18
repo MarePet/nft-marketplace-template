@@ -1,0 +1,14 @@
+.Like{
+    display: flex;
+    gap: .2rem;
+}
+
+.Like_Box{
+    border: 3px solid var(--icons-color);
+    border-radius: 50%;
+    display: flex;
+}
+
+.Like_Box_Img {
+    border-radius: 50%;
+}

@@ -1,0 +1,73 @@
+
+.AudioLive{
+   margin-top: 4rem;
+}
+
+.AudioLive_Box{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding-block: 5rem 8rem;
+    grid-template-columns: 4fr 2fr;
+    gap: 3rem;
+}
+
+.AudioLive_Box_Right{
+    padding: .5rem 0 0 0;
+    display: grid;
+    gap: 2rem;
+}
+
+.AudioLive_Box_Left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+    .AudioLive_Box{
+     width: 90%;
+     grid-template-columns: 1fr;   
+    }
+
+    .AudioLive_Box_Right{
+        gap: 2rem;
+    }
+
+    .AudioLive_Box_Left{
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (min-device-width: 377px) and (max-device-width: 425px) {
+    .AudioLive_Box{
+     width: 90%;
+     grid-template-columns: 1fr;   
+    }
+
+    .AudioLive_Box_Right{
+        gap: 2rem;
+    }
+
+    .AudioLive_Box_Left{
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (min-device-width: 427px) and (max-device-width: 768px) {
+    .AudioLive_Box{
+     width: 90%;
+     grid-template-columns: 1fr;   
+    }
+
+    .AudioLive_Box_Right{
+        gap: 2rem;
+    }
+
+    .AudioLive_Box_Left{
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+}

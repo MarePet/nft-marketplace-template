@@ -55,7 +55,7 @@
 }
 
 .NFTCard_Box_Update_Left_Like_Icon{
-    color: red;
+    color: var(--main-bg-color);
 }
 
 .NFTCard_Box_Update_Right{

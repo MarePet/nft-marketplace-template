@@ -1,0 +1,185 @@
+
+.AudioCard_Box {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(6, 4rem);
+    gap: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+.AudioCard_Box:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.AudioCard_Box_Like_Time {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    z-index: 123;
+    width: 100%;
+}
+
+.AudioCard_Box_Like {
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.AudioCard_Box_Like_Icon {
+    color: var(--main-bg-color);
+    font-size: 2rem;
+}
+
+.AudioCard_Box_Like_Icon_Unlike {
+    color: var(--main-bg-color);
+    font-size: 2rem;
+}
+
+.AudioCard_Box_Time {
+    background-color: var(--main-bg-color);
+    padding: 1rem 4.5rem;
+    margin-right: -1.4rem;
+    transform: skewX(35deg);
+    border-bottom-left-radius: 1rem;
+}
+
+.AudioCard_Box_Like_Time_Remaining {
+    transform: skew(-35deg);
+    text-align: center;
+}
+
+.AudioCard_Box_Like_Time_Remaining small {
+    font-weight: 500;
+}
+
+.AudioCard_Box_Like_Time_Remaining h5 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+}
+
+.AudioCard_Box_Player {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    display: flex;
+    padding-inline: 3rem;
+    gap: 4rem;
+    z-index: 1234;
+    align-items: center;
+}
+
+.AudioCard_Box_MusicPlayer_Icon {
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.AudioCard_Box_Img {
+    grid-column: 1/-1;
+    grid-template-rows: 1/-1;
+    margin-top: -5rem;
+}
+
+
+.AudioCard_Box_Details {
+    grid-column: 1/-1;
+    grid-row: 5/-1;
+    z-index: 123;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    padding: 1rem 0;
+    width: 90%;
+    border-top-right-radius: 2rem;
+    padding: 2rem;
+    line-height: .1rem;
+}
+
+.AudioCard_Box_Details_Info h4 {
+    font-size: 1.1rem;
+    line-height: 0;
+}
+
+.AudioCard_Box_Details_Info_Price {
+    border: 1px solid var(--icons-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.AudioCard_Box_Details_Info_Price small {
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+}
+
+.AudioCard_Box_Details_Info_Stock{
+    display: grid;
+    gap: 1rem;
+}
+
+.AudioCard_Box_Details_Info_Price p {
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.AudioCard_Box_Details_Stock {
+    text-align: end;
+    display: grid;
+}
+
+.AudioCard_Box_Details_Stock small {
+    margin: 2rem;
+}
+
+@media screen and(max-width: 35em) {
+    .AudioCard_Box_Time {
+        padding-inline: 2.5rem;
+    }
+
+    .AudioCard_Box_Like_Time_Remaining h5 {
+        font-size: 1rem;
+    }
+
+    .AudioCard_Box_Details {
+        padding: 1rem;
+    }
+}
+
+@media screen and(min-device-width: 427px) and (max-device-width: 768px) {
+    .AudioCard_Box_Like_Time_Remaining h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and(min-device-width: 777px) and (max-device-width: 1024px) {
+    .AudioCard_Box_Time {
+        padding: 1rem 2 rem;
+    }
+
+    .AudioCard_Box_Like_Time_Remaining h5 {
+        font-size: 1rem;
+    }
+
+    .AudioCard_Box_Details_Info h4 {
+        font-size: 1rem;
+    }
+}
