@@ -2,7 +2,7 @@ import React from 'react';
 
 //INTERNAL IMPORT
 import Style from '../styles/index.module.css';
-import { Hero , Service, BigNFTSlider, Subscribe, Title, Category,Filter,NFTCard,Collection, FollowerTab, AudioLive, Slider, Brand} from '@/components/component';
+import { Hero , Service, BigNFTSlider, Subscribe, Title, Category,Filter,NFTCard,Collection, FollowerTab, AudioLive, Slider, Brand, Video} from '@/components/component';
 
 
 const Home = () => {
@@ -26,8 +26,9 @@ const Home = () => {
       <Title heading="Browse by category" 
       paragraph="Explore NFTs by the featured categories. "/>
       <Category/>
-      <Subscribe/>
       <Brand/>
+      <Video/>
+      <Subscribe/>
     </div>
   )
 }
