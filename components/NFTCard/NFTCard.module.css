@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 3rem auto;
     margin-bottom: 10rem;
 }
 
@@ -82,14 +82,13 @@
     grid-row: 1 / end;
     overflow: hidden;
     border-radius: 1rem;
-    
 }
 
 .NFTCard_Box_Img_Image{
     border-radius: 1rem;
     transition: all .4s ease-in;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 33rem;
 }
 
 .NFTCard_Box_Update_Details{

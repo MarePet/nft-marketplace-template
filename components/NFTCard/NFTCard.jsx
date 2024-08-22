@@ -11,7 +11,9 @@ import images from '../../img'
 
 const NFTCard = () => {
  
-    const featureArray = [1,2,3,4,5,6,7,8,9];
+    const featureArray = [
+       images.nft_image_1, images.nft_image_2, images.nft_image_3
+    ];
 
     const [like,setLike] = useState(true);
 
@@ -31,7 +33,7 @@ const NFTCard = () => {
                 <div className={Style.NFTCard_Box} key={i+1}>
                     <div className={Style.NFTCard_Box_Img}>
                         <Image
-                        src={images.nft_image_1}
+                        src={el}
                         alt='nft_image'
                         className={Style.NFTCard_Box_Img_Image}
                         />

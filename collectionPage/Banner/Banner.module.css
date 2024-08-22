@@ -1,0 +1,12 @@
+.Banner_Img_Mobile{
+    display: none;
+}
+
+@media screen and (max-width: 35em) {
+    .Banner_Img_Mobile{
+        display: block;
+    }
+    .Banner_Img{
+        display: none;
+    }
+}

@@ -4,15 +4,14 @@ import Image from 'next/image';
 
 //INTERNAL IMPORT
 import Style from './SliderCard.module.css';
-import images from '../../../img';
 import { LikeProfile } from '@/components/component';
 
-export const SliderCard = () => {
+export const SliderCard = ({el,i}) => {
   return (
   <motion.div className={Style.SliderCard}>
     <div className={Style.SliderCard_Box}>
       <motion.div className={Style.SliderCard_Box_Img}>
-        <Image src={images.creatorbackground10} alt='slider profile' objectFit='cover' className={Style.SliderCard_Box_Img_Img}/>
+        <Image src={el.background} alt='slider profile' className={Style.SliderCard_Box_Img_Img}/>
       </motion.div>
       <div className={Style.SliderCard_Box_Title}>
         <p>NFT Video #1245</p>

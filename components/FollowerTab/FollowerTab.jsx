@@ -11,34 +11,131 @@ import {
 //INTERNAL IMPORT
 import Style from './FollowerTab.module.css';
 import FollowerTabCard from './FollowerTabCard/FollowerTabCard';
+import images from '../../img';
 
 const FollowerTab = () => {
-    const CardArray = [1,2,3,4,5,6,7,8];
-    const FollowingArray=[1,2,3,4,5,6];
-    const NewsArray = [1,2,3,4,5]; 
+    const CardArray = [
+        {
+            background: images.creatorbackground1,
+            user: images.user1
+        },
+        {
+            background: images.creatorbackground2,
+            user: images.user2
+        },
+        {
+            background: images.creatorbackground3,
+            user: images.user3
+        },
+        {
+            background: images.creatorbackground4,
+            user: images.user4
+        },
+        {
+            background: images.creatorbackground5,
+            user: images.user5
+        },
+        {
+            background: images.creatorbackground6,
+            user: images.user6
+        },
+        {
+            background: images.creatorbackground7,
+            user: images.user7
+        },
+        {
+            background: images.creatorbackground8,
+            user: images.user8
+        }
+    ];
+    const FollowingArray = [{
+        background: images.creatorbackground1,
+        user: images.user1
+    },
+    {
+        background: images.creatorbackground4,
+        user: images.user4
+    },
+    {
+        background: images.creatorbackground5,
+        user: images.user5
+    },
+    {
+        background: images.creatorbackground6,
+        user: images.user6
+    },
+    {
+        background: images.creatorbackground2,
+        user: images.user2
+    },
+    {
+        background: images.creatorbackground3,
+        user: images.user3
+    },
+    {
+        background: images.creatorbackground7,
+        user: images.user7
+    },
+    {
+        background: images.creatorbackground8,
+        user: images.user8
+    }];
+    const NewsArray = [{
+        background: images.creatorbackground1,
+        user: images.user1
+    },
+    {
+        background: images.creatorbackground2,
+        user: images.user2
+    },
+    {
+        background: images.creatorbackground3,
+        user: images.user3
+    },
+    {
+        background: images.creatorbackground6,
+        user: images.user6
+    },
+    {
+        background: images.creatorbackground7,
+        user: images.user7
+    },
+    {
+        background: images.creatorbackground8,
+        user: images.user8
+    },
+    {
+        background: images.creatorbackground4,
+        user: images.user4
+    },
+    {
+        background: images.creatorbackground5,
+        user: images.user5
+    },
+    ];
 
     const [popular, setPopular] = useState(true);
     const [following, setFollowing] = useState(false);
     const [news, setNews] = useState(false);
 
-    const openPopular = () =>{
-        if(!popular){
+    const openPopular = () => {
+        if (!popular) {
             setPopular(true);
             setFollowing(false);
             setNews(false);
         }
     }
 
-    const openFollower = () =>{
-        if(!following){
+    const openFollower = () => {
+        if (!following) {
             setPopular(false);
             setFollowing(true);
             setNews(false);
         }
     }
 
-    const openNews = () =>{
-        if(!news){
+    const openNews = () => {
+        if (!news) {
             setPopular(false);
             setFollowing(false);
             setNews(true);
@@ -53,13 +150,13 @@ const FollowerTab = () => {
                 <div className={Style.FollowerTab_Tabs}>
                     <div className={Style.FollowerTab_Tabs_Btn}>
                         <button onClick={() => openPopular()}>
-                            <RiUserFollowFill/> Popular
+                            <RiUserFollowFill /> Popular
                         </button>
                         <button onClick={() => openFollower()}>
-                            <RiUserFollowFill/> Following
+                            <RiUserFollowFill /> Following
                         </button>
                         <button onClick={() => openNews()}>
-                            <RiAwardLine/> Noteworthy
+                            <RiAwardLine /> Noteworthy
                         </button>
                     </div>
                 </div>
@@ -67,8 +164,8 @@ const FollowerTab = () => {
             {
                 popular && (
                     <div className={Style.FollowerTab_Box}>
-                        {CardArray.map((el,i)=>
-                        <FollowerTabCard key={i+1} i={i} el={el}/>
+                        {CardArray.map((el, i) =>
+                            <FollowerTabCard key={i + 1} i={i} el={el} />
                         )}
                     </div>
                 )
@@ -76,17 +173,17 @@ const FollowerTab = () => {
             {
                 following && (
                     <div className={Style.FollowerTab_Box}>
-                        {FollowingArray.map((el,i)=>
-                        <FollowerTabCard key={i+1} i={i} el={el}/>
+                        {FollowingArray.map((el, i) =>
+                            <FollowerTabCard key={i + 1} i={i} el={el} />
                         )}
                     </div>
                 )
             }
-             {
+            {
                 news && (
                     <div className={Style.FollowerTab_Box}>
-                        {NewsArray.map((el,i)=>
-                        <FollowerTabCard key={i+1} i={i} el={el}/>
+                        {NewsArray.map((el, i) =>
+                            <FollowerTabCard key={i + 1} i={i} el={el} />
                         )}
                     </div>
                 )

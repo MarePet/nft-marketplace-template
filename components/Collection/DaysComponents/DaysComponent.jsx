@@ -6,12 +6,12 @@ import { MdVerified } from 'react-icons/md'
 import Style from './DaysComponent.module.css'
 import images from '../../../img'
 
-const DaysComponent = () => {
+const DaysComponent = ({el,i}) => {
   return (
     <div className={Style.DaysComponent}>
       <div className={Style.DaysComponent_Box}>
         <div className={Style.DaysComponent_Box_Img}>
-          <Image src={images.creatorbackground1}
+          <Image src={el.background}
             className={Style.DaysComponent_Box_Img_Img}
             alt='profile background'
             width={500}
