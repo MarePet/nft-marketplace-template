@@ -1,0 +1,122 @@
+.NFTCard {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    margin-bottom: 14rem;
+}
+
+.NFTCard_Box{
+    display: grid;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    border-radius: 1rem;
+}
+
+.NFTCard_Box:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.NFTCard_Box_Like{
+    padding: 1rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 1111111;
+}
+
+.NFTCard_Box_Like_Box_Box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NFTCard_Box_Like_Box_Box_Icon{
+    color: var(--icons-color);
+    font-size: 2rem;
+}
+
+.NFTCard_Box_Like_Box_Box p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    border-radius: 2rem;
+    padding: 0 .5rem;
+}
+
+.NFTCard_Box_Img{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.NFTCard_Box_Img_Img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.NFTCard_Box_Info{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.NFTCard_Box_Info_Left{
+    line-height: 0;
+}
+
+.NFTCard_Box_Info small{
+    font-size: 1rem;
+}
+
+.NFTCard_Box_Info_Left p{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.NFTCard_Box_Price{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 0;
+    padding: 1rem;
+}
+
+.NFTCard_Box_Price_Box p{
+    border: 1px solid var(--icons-color);
+    padding: 1.5rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    border-radius: .3rem;
+}
+
+.NFTCard_Box_Price_Box small{
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: .3rem;
+    border-radius: .3rem;
+    margin-left: 1rem;
+}
+
+.NFTCard_Box_Price_Stock{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 35em) {
+    .NFTCard{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .NFTCard{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
