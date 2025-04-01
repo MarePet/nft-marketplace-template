@@ -8,7 +8,7 @@ import images from "../img";
 import {
   AuthorProfileCard,
   AuthorTaps,
-  AuthorNFTCardBox
+  AuthorNFTCardBox,
 } from "@/authorPage/componentIndex";
 import FollowerTabCard from "@/components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
@@ -34,14 +34,20 @@ const author = () => {
       <Banner bannerImage={images.creatorbackground2} />
       <AuthorProfileCard />
       <AuthorTaps
-        setCollectibles={setCollectibles} 
+        setCollectibles={setCollectibles}
         setCreated={setCreated}
         setLike={setLike}
         setFollower={setFollower}
         setFollowing={setFollowing}
       />
 
-      <AuthorNFTCardBox  />
+      <AuthorNFTCardBox
+        collectibles={collectibles}
+        created={created}
+        like={like}
+        follower={follower}
+        following={following}
+      />
       <Title
         heading="Popular Creators"
         paragraph="Click on music icon and enjoy NFT music."
