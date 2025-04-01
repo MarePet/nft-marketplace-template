@@ -1,15 +1,13 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 //INTERNAL IMPORT
 import Style from "./AuthorNFTCardBox.module.css";
 import images from "../../img";
-import { NFTCardCollPage } from '@/collectionPage/collectionIndex';
-import FollowerTabCard from '@/components/FollowerTab/FollowerTabCard/FollowerTabCard';
+import { NFTCardCollPage } from "@/collectionPage/collectionIndex";
+import FollowerTabCard from "@/components/FollowerTab/FollowerTabCard/FollowerTabCard";
 
 const AuthorNFTCardBox = ({}) => {
-  return (
-    <div>AuthorNFTCardBox</div>
-  )
-}
+  return <div>AuthorNFTCardBox</div>;
+};
 
-export default AuthorNFTCardBox
+export default AuthorNFTCardBox;
