@@ -120,15 +120,21 @@ const AuthorNFTCardBox = ({
       {collectibles && <NFTCardCollPage NFTData={collectiblesArray} />}
       {created && <NFTCardCollPage NFTData={createdArray} />}
       {like && <NFTCardCollPage NFTData={likedArray} />}
-      {follower &&
-        followerArray.map((el, index) => (
-          <FollowerTabCard key={index} i={index} el={el} />
-        ))}
+      {follower && (
+        <div className={Style.AuthorNFTCardBox_Box}>
+          {followerArray.map((el, index) => (
+            <FollowerTabCard key={index} i={index} el={el} />
+          ))}
+        </div>
+      )}
 
-      {following &&
-        followingArray.map((el, index) => (
-          <FollowerTabCard key={index} i={index} el={el} />
-        ))}
+      {following && (
+        <div className={Style.AuthorNFTCardBox_Box}>
+          {followingArray.map((el, index) => (
+            <FollowerTabCard key={index} i={index} el={el} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
